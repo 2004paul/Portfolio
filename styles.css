@@ -27,8 +27,12 @@ nav {
 .logo {
     font-size: 2em;
     font-weight: 700;
-    color: 	#6565e7;
+    color: 	#676d72;
     text-transform:uppercase;
+}
+
+.logo span {
+    color: #6565e7;
 }
 
 nav ul li {
@@ -78,19 +82,10 @@ nav ul li a:hover{
 }
 
 .intro-links {
-    margin: 30px 0;
+    display: flex;
 }
 
-.intro-links a {
-    color: #dbe9f4;
-    background-color: #676d72;
-    padding: 8px 13px;
-    border-radius: 50%;
-    margin: 0 2px;
-    transition: all 0.3s;
-}
-
-.intro-links a:nth-child(1){
+#btn{
     color: #dbe9f4;
     text-decoration: none;
     background-color: #6565e7;
@@ -99,6 +94,36 @@ nav ul li a:hover{
     margin-right: 20px;
 }
 
-.intro-links a:hover{
-    box-shadow: 0 0 10px #252628ad;
+.intro-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #dbe9f4;
+    background-color: #676d72;
+    padding: 15px 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: all 0.3s;
+}
+
+.design {
+    display: inline-block;
+    margin: 15% -20%;
+    padding: 20px;
+    background: #6565e7;
+    border-radius: 1100% 10px 10px 1100%;
+}
+
+.intro-links a:hover {
+    transform: rotateY(160deg); /* Changed to rotateY for better visibility */
+    background-color: #6565e7; /* Added hover effect for background color */
+}
+
+#btn:hover {
+    transform: rotate(5deg);
+}
+
+.intro-style{
+    display: block;
 }
